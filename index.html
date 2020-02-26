@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#!" class="brand-logo">Dice Game</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Home</a></li>
+    </ul>
+
+    <div class="wrapper row">
+      <div class="first-player-panel activecol-s6 ">
+        <div class="player-name">Player 1</div>
+        <div class="player-score">100</div>
+        <div class="current-player">
+          <div class="current">Current</div>
+          <div class="current-score">0</div>
+        </div>
+      </div>
+      <div class="first-player-panel col-s6">
+        <div class="player-name">Player 2</div>
+        <div class="player-score">100</div>
+        <div class="current-player">
+          <div class="current">Current</div>
+          <div class="current-score">0</div>
+        </div>
+      </div>
+      <div class="col s10 offset-s1 center-align mx={3} btn-container">
+        <a class="waves-effect waves-light btn-large z-depth-4">New Game</a>
+        <a class="waves-effect waves-light btn-large z-depth-4">Roll</a>
+        <a class="waves-effect waves-light btn-large z-depth-4">Button</a>
+      </div>
+      <span class="game-score">Score</span>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

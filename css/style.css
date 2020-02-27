@@ -18,11 +18,10 @@ body {
 
 /* Wrapper */
 .wrapper {
-  width: 1000px;
-  height: auto;
+  width: 1200px;
+  height: 90%;
   position: absolute;
-  margin-top: 2.1rem;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
@@ -35,33 +34,47 @@ body {
 .second-player-panel {
   width: 50%;
   float: left;
-  height: 600px;
-  padding: 100px;
+  height: 250px;
+  padding: 40px;
 }
 
 .player-name {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 100;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   position: relative;
 }
 
-.player-score {
+#player-score1,
+#player-score2,
+#player-score3,
+#player-score4,
+#player-score5,
+#player-score6,
+#player-score7,
+#player-score8,
+#player-score9,
+#player-score10 {
   text-align: center;
-  font-size: 80px;
+  font-size: 30px;
   font-weight: 100;
   color: #eb4d4d;
-  margin-bottom: 130px;
+  margin-bottom: 5px;
 }
 
 .current-score,
 .current {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
+}
+
+.current-score {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
 }
 
 .active,
@@ -70,5 +83,83 @@ body {
 }
 
 .btn-container {
-  margin: 1.5rem auto;
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+#dice1 {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  float: right;
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+#dice2 {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  float: right;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 10px;
+  top: 85%;
+  left: 50%;
+}
+#dice3 {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  float: right;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 10px;
+  top: 85%;
+  left: 60%;
+}
+#dice4 {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  float: right;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 10px;
+  top: 85%;
+  left: 70%;
+}
+#dice5 {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  float: right;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 10px;
+  top: 85%;
+  left: 80%;
+}
+#dice6 {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  float: right;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 10px;
+  top: 85%;
+  left: 90%;
+}
+
+.brand2 {
+  float: right;
+}
+
+#round-list {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: #eb4d4d;
 }

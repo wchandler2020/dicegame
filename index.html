@@ -16,12 +16,11 @@
       <div class="nav-wrapper">
         <div class="container">
           <a href="#!" class="brand-logo">Dice Game</a>
+          <a href="#" class="brand2">Test</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
           >
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Home</a></li>
-          </ul>
+          <ul class="right hide-on-med-and-down"></ul>
         </div>
       </div>
     </nav>
@@ -30,29 +29,110 @@
       <li><a href="sass.html">Home</a></li>
     </ul>
 
-    <div class="wrapper row">
-      <div class="first-player-panel activecol-s6 ">
-        <div class="player-name">Player 1</div>
-        <div class="player-score">100</div>
-        <div class="current-player">
-          <div class="current">Current</div>
-          <div class="current-score">0</div>
+    <div class="wrapper container">
+      <div class="row">
+        <div class="first-player-panel playerturn col s2 player1">
+          <div class="player-name">Player 1</div>
+          <div id="player-score1">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="first-player-panel col s2 player2">
+          <div class="player-name">Player 2</div>
+          <div id="player-score2">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="first-player-panel col s2 player3">
+          <div class="player-name">Player 3</div>
+          <div id="player-score3">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="first-player-panel col s2 player4">
+          <div class="player-name">Player 4</div>
+          <div id="player-score4">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="first-player-panel col s2 player5">
+          <div class="player-name">Player 5</div>
+          <div id="player-score5">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="first-player-panel active col s2 player6">
+          <div class="player-name">Player 6</div>
+          <div id="player-score6">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
         </div>
       </div>
-      <div class="first-player-panel col-s6">
-        <div class="player-name">Player 2</div>
-        <div class="player-score">100</div>
-        <div class="current-player">
-          <div class="current">Current</div>
-          <div class="current-score">0</div>
+      <div class="row">
+        <div class="first-player-panel col s2 player7">
+          <div class="player-name">Player 7</div>
+          <div id="player-score7">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
         </div>
+        <div class="first-player-panel col s2 player8">
+          <div class="player-name">Player 8</div>
+          <div id="player-score8">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="first-player-panel col s2 player9">
+          <div class="player-name">Player 9</div>
+          <div id="player-score9">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="first-player-panel col s2 player10">
+          <div class="player-name">Player 10</div>
+          <div id="player-score10">100</div>
+          <div class="current-player">
+            <div class="current">Current</div>
+            <div class="current-score">0</div>
+          </div>
+        </div>
+        <div class="col s2 offset-s2"></div>
       </div>
+
       <div class="col s10 offset-s1 center-align mx={3} btn-container">
-        <a class="waves-effect waves-light btn-large z-depth-4">New Game</a>
-        <a class="waves-effect waves-light btn-large z-depth-4">Roll</a>
-        <a class="waves-effect waves-light btn-large z-depth-4">Button</a>
+        <span id="round-list"></span>
+        <a class="waves-effect waves-light btn-large z-depth-4">Reset Game</a>
+        <a
+          class="waves-effect waves-light btn-large z-depth-4"
+          onclick="gameInit()"
+          >Roll</a
+        >
+        <span class="game-score">
+          <img src="./images/dice1.png" alt="" class="dice" id="dice1" />
+          <img src="./images/dice1.png" alt="" class="dice" id="dice2" />
+          <img src="./images/dice1.png" alt="" class="dice" id="dice3" />
+          <img src="./images/dice1.png" alt="" class="dice" id="dice4" />
+          <img src="./images/dice1.png" alt="" class="dice" id="dice5" />
+          <img src="./images/dice1.png" alt="" class="dice" id="dice6" />
+        </span>
       </div>
-      <span class="game-score">Score</span>
     </div>
 
     <!-- Compiled and minified JavaScript -->
